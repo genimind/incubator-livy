@@ -14,7 +14,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from __future__ import absolute_import
 
 import base64
 import cloudpickle
@@ -25,7 +24,7 @@ import threading
 import traceback
 from configparser import ConfigParser
 from concurrent.futures import ThreadPoolExecutor
-from future.moves.urllib.parse import ParseResult, urlparse
+from urllib.parse import ParseResult, urlparse
 from io import open, StringIO
 from requests_kerberos import HTTPKerberosAuth, REQUIRED
 from livy.job_handle import JobHandle

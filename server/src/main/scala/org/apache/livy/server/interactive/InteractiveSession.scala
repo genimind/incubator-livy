@@ -207,8 +207,8 @@ object InteractiveSession extends Logging {
           case 2 | 3 =>
             if (new File(sparkHome, "RELEASE").isFile) {
               new File(sparkHome, "jars")
-            } else if (new File(sparkHome, "assembly/target/scala-2.11/jars").isDirectory) {
-              new File(sparkHome, "assembly/target/scala-2.11/jars")
+            // } else if (new File(sparkHome, "assembly/target/scala-2.12/jars").isDirectory) {
+            //   new File(sparkHome, "assembly/target/scala-2.12/jars")
             } else {
               new File(sparkHome, "assembly/target/scala-2.12/jars")
             }

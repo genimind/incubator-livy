@@ -219,7 +219,10 @@ class NormalNode(object):
 
         try:
             for node in to_run_exec:
-                mod = ast.Module([node])
+                if sys.version_info >= (3,8,0):
+                  mod = ast.Module([node], [])
+                else:
+                  mod = ast.Module([node])
                 code = compile(mod, '<stdin>', 'exec')
                 exec(code, global_dict)
 
