@@ -29,10 +29,10 @@ CLASSIFIERS = [
 
 requirements = [
     'cloudpickle>=1.6.0',
-    'configparser>=3.5.0',
+    'configparser>=3.5.0; python_version < "3"',
     'requests>=2.10.0',
     'responses>=0.5.1',
-    'requests-kerberos>=0.11.0',
+    'requests-kerberos>=0.11.0',    
 ]
 
 setup(
