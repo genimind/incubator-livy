@@ -24,15 +24,17 @@ CLASSIFIERS = [
     'Intended Audience :: Developers',
     'Operating System :: OS Independent',
     'Programming Language :: Python :: 2.7',
+    'Programming Language :: Python :: 3',
     'Topic :: Software Development :: Libraries :: Python Modules',
 ]
 
 requirements = [
-    'cloudpickle>=0.2.1',
+    'cloudpickle>=0.2.1;python_version<"3.0"',
+    'cloudpickle>=1.6.0;python_version>"3.0"',
     'configparser>=3.5.0',
-    'future>=0.15.2',
-    'futures>=3.0.5',
-    'mock~=3.0.5',
+    'future>=0.15.2;python_version<"3.0"',
+    'futures>=3.0.5;python_version<"3.0"',
+    'mock~=3.0.5;python_version<"3.0"',
     'requests>=2.10.0',
     'responses>=0.5.1',
     'requests-kerberos>=0.11.0',

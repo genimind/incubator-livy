@@ -124,6 +124,9 @@
     <!-- Set this to "true" to skip R tests. -->
     <skipRTests>false</skipRTests>
 
+    <!-- Set this to "true" to skip Specific Unicode python2 tests. -->
+    <skipPython2Tests>false</skipPython2Tests>
+
     <!-- Set this to "true" to skip PySpark3 tests. -->
     <skipPySpark3Tests>false</skipPySpark3Tests>
 
@@ -708,6 +711,7 @@
               <spark.ui.enabled>false</spark.ui.enabled>
               <project.version>${project.version}</project.version>
               <skipRTests>${skipRTests}</skipRTests>
+              <skipPython2Tests>${skipPython2Tests}</skipPython2Tests>
               <skipPySpark3Tests>${skipPySpark3Tests}</skipPySpark3Tests>
             </systemProperties>
             <redirectTestOutputToFile>${test.redirectToFile}</redirectTestOutputToFile>
@@ -737,6 +741,7 @@
               <spark.ui.enabled>false</spark.ui.enabled>
               <project.version>${project.version}</project.version>
               <skipRTests>${skipRTests}</skipRTests>
+              <skipPython2Tests>${skipPython2Tests}</skipPython2Tests>
               <skipPySpark3Tests>${skipPySpark3Tests}</skipPySpark3Tests>
             </systemProperties>
             <stdout>D</stdout>

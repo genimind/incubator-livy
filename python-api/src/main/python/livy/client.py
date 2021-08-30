@@ -20,12 +20,16 @@ import base64
 import cloudpickle
 import os
 import re
+import sys
 import requests
 import threading
 import traceback
 from configparser import ConfigParser
 from concurrent.futures import ThreadPoolExecutor
-from future.moves.urllib.parse import ParseResult, urlparse
+if sys.version < '3':
+    from future.moves.urllib.parse import ParseResult, urlparse
+else:
+    from urllib.parse import ParseResult, urlparse
 from io import open, StringIO
 from requests_kerberos import HTTPKerberosAuth, REQUIRED
 from livy.job_handle import JobHandle
