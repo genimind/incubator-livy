@@ -54,7 +54,6 @@ import org.apache.livy.rsc.driver.RSCDriverBootstrapper;
 import org.apache.livy.rsc.rpc.Rpc;
 import org.apache.livy.rsc.rpc.RpcDispatcher;
 import org.apache.livy.rsc.rpc.RpcServer;
-
 import static org.apache.livy.rsc.RSCConf.Entry.*;
 
 /**

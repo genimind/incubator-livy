@@ -45,7 +45,6 @@ import org.apache.livy.rsc.driver.AddFileJob;
 import org.apache.livy.rsc.driver.AddJarJob;
 import org.apache.livy.rsc.rpc.Rpc;
 import org.apache.livy.sessions.SessionState;
-
 import static org.apache.livy.rsc.RSCConf.Entry.*;
 
 public class RSCClient implements LivyClient {
