@@ -30,13 +30,13 @@ import org.mockito.Mockito.{atLeastOnce, verify, when}
 import org.mockito.internal.matchers.Equals
 import org.mockito.invocation.InvocationOnMock
 import org.mockito.stubbing.Answer
-import org.scalatest.FunSpec
-import org.scalatest.Matchers._
+import org.scalatest.funspec.AnyFunSpec
+import org.scalatest.matchers.should._
 import org.scalatestplus.mockito.MockitoSugar.mock
 
 import org.apache.livy.{LivyBaseUnitTestSuite, LivyConf}
 
-class FileSystemStateStoreSpec extends FunSpec with LivyBaseUnitTestSuite {
+class FileSystemStateStoreSpec extends AnyFunSpec with Matchers with LivyBaseUnitTestSuite {
   describe("FileSystemStateStore") {
     def pathEq(wantedPath: String): Path = argThat(new ArgumentMatcher[Path] {
       private val matcher = new Equals(wantedPath)

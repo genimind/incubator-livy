@@ -17,8 +17,8 @@
 
 package org.apache.livy.repl
 
-import org.scalatest.matchers.should._
 import org.scalatest.funspec.AnyFunSpec
+import org.scalatest.matchers.should._
 
 import org.apache.livy.LivyBaseUnitTestSuite
 
