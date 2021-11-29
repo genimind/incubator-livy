@@ -23,9 +23,9 @@ import scala.language.postfixOps
 import scala.util.{Failure, Try}
 
 import org.mockito.Mockito.{doReturn, never, verify, when}
+import org.scalatest.concurrent.Eventually._
 import org.scalatest.funspec.AnyFunSpec
 import org.scalatest.matchers.should._
-import org.scalatest.concurrent.Eventually._
 import org.scalatestplus.mockito.MockitoSugar.mock
 
 import org.apache.livy.{LivyBaseUnitTestSuite, LivyConf}

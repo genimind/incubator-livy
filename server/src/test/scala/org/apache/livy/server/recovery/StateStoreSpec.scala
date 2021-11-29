@@ -24,7 +24,7 @@ import org.scalatest.matchers.should._
 import org.apache.livy.{LivyBaseUnitTestSuite, LivyConf}
 import org.apache.livy.sessions.SessionManager
 
-class StateStoreSpec extends AnyFunSpec with Matchers 
+class StateStoreSpec extends AnyFunSpec with Matchers
     with BeforeAndAfter with LivyBaseUnitTestSuite {
   describe("StateStore") {
     after {

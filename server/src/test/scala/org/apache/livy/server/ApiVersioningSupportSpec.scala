@@ -26,7 +26,7 @@ import org.scalatra.test.scalatest.ScalatraSuite
 
 import org.apache.livy.LivyBaseUnitTestSuite
 
-class ApiVersioningSupportSpec extends ScalatraSuite with AnyFunSpecLike 
+class ApiVersioningSupportSpec extends ScalatraSuite with AnyFunSpecLike
     with Matchers with LivyBaseUnitTestSuite {
   val LatestVersionOutput = "latest"
 

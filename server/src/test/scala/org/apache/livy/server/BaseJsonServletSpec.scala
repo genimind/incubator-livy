@@ -23,7 +23,6 @@ import javax.servlet.http.HttpServletResponse._
 import scala.reflect.ClassTag
 
 import com.fasterxml.jackson.databind.ObjectMapper
-
 import org.scalatest.funspec.AnyFunSpecLike
 import org.scalatra.test.scalatest.ScalatraSuite
 

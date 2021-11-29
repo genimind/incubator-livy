@@ -22,9 +22,9 @@ import scala.concurrent.Future
 import scala.language.postfixOps
 
 import org.mockito.Mockito.{never, verify, when}
+import org.scalatest.concurrent.Eventually._
 import org.scalatest.funspec.AnyFunSpec
 import org.scalatest.matchers.should._
-import org.scalatest.concurrent.Eventually._
 import org.scalatestplus.mockito.MockitoSugar.mock
 
 import org.apache.livy.LivyConf
